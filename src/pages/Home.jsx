@@ -109,7 +109,7 @@ const Home = () => {
                 marginTop: "-4px",
               }}
             >
-             Welcome to Captain Mobile 
+             Welcome to Captain Mobile 2
             </h2>
             <div style={{ padding: "20px" }}>
               <a
