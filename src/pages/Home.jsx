@@ -86,7 +86,7 @@ const Home = () => {
         {/* Hero Section */}
         <div
           style={{
-            height: "500px",
+       
             minHeight: "300px",
             width: "100%",
             backgroundImage:
@@ -127,7 +127,7 @@ const Home = () => {
         </div>
         <div
           style={{
-            height: "500px",
+           
             width: "100%",
             // backgroundImage:
             //   "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/src/assets/kedai2.jpeg')",
@@ -135,7 +135,8 @@ const Home = () => {
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             minHeight: "300px",
-            height: "100%",
+            height:"100%"
+       
           }}
         >
           <div
