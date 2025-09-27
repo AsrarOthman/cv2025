@@ -65,7 +65,7 @@ const Header = ({ handleLogout }) => {
         <nav className={`menu ${menuOpen ? "open" : ""}`}>
           <ScrollNavLink to="/home" label="Home" />
           <ScrollNavLink to="/service" label="Service" />
-          <ScrollNavLink to="/media" label="MediaSocial" />
+          <ScrollNavLink to="/media" label="SocialMedia" />
           <ScrollNavLink to="/contactus" label="ContactUs" />
         
         </nav>

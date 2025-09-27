@@ -226,7 +226,7 @@ const MediaSosial = () => {
                 <h4>TikTok </h4>
                 <blockquote
                   className="tiktok-embed"
-                  cite="https://www.tiktok.com/@captainmobilekemaman"
+                  cite="https://www.tiktok.com/@captainmobilekemaman___"
                   data-unique-id="captainmobilekuantan"
                   data-embed-type="creator"
                   style={{
@@ -241,7 +241,7 @@ const MediaSosial = () => {
                     title="tiktok-captainmobile"
                     name="__tt_embed__v52259989530870680"
                     sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-top-navigation allow-same-origin"
-                    src="https://www.tiktok.com/embed/@captainmobilekemaman?lang=en-GB&amp;referrer=https%3A%2F%2Fcapweb-mueh.onrender.com%2F"
+                    src="https://www.tiktok.com/embed/@captainmobilekemaman___?lang=en-GB&amp;referrer=https%3A%2F%2Fcapweb-mueh.onrender.com%2F"
                     style={{
                       width: "100%",
                       height: "494px",
@@ -267,7 +267,7 @@ const MediaSosial = () => {
                   style={{ marginTop: "2rem", width: "100%" }}
                 >
                   <iframe
-                    src="https://www.instagram.com/captainmobilekemaman/embed"
+                    src="https://www.instagram.com/captainmobilekemaman___/embed"
                     width="100%"
                     height="480"
                     frameBorder="0"
