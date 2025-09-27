@@ -267,7 +267,7 @@ const MediaSosial = () => {
                   style={{ marginTop: "2rem", width: "100%" }}
                 >
                   <iframe
-                    src="https://www.instagram.com/captainmobilekemaman___/embed"
+                    src="https://www.instagram.com/captainmobilekemaman/embed"
                     width="100%"
                     height="480"
                     frameBorder="0"
