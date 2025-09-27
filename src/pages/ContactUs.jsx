@@ -66,21 +66,21 @@ const ContactUs = () => {
                 marginTop: "-4px",
               }}
             >
-              Captain Mobile - Contact Us
+              Captain Mobile
             </h2>
-            <div style={{ padding: "20px" }}>
+            <div style={{ paddingLeft: "20px" }}>
               <a
                 style={{
                   color: "white",
                   lineHeight: "1.6",
                   background: "rgba(0, 0, 0, 0.5)",
                   textAlign: "justify",
+                  fontSize:"30px",
+                  fontWeight:"bold"
+             
                 }}
               >
-                Ikuti Captain Mobile di media sosial untuk promosi terkini, tips
-                penjagaan telefon, dan update servis terbaru! 🎉 Kami aktif di
-                TikTok, Instagram, dan Facebook — jangan lupa follow supaya anda
-                tidak terlepas sebarang info menarik.
+               “Get in Touch – Quick Deals, Quick Response"
               </a>
             </div>
           </div>

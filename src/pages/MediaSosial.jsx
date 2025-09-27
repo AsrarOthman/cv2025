@@ -66,24 +66,24 @@ const MediaSosial = () => {
                 marginTop: "-4px",
               }}
             >
-              Captain Mobile - Media Social
+              Captain Mobile 
             </h2>
-            <div style={{ padding: "20px" }}>
+          </div>
+          <div style={{ paddingLeft: "20px" }}>
               <a
                 style={{
                   color: "white",
                   lineHeight: "1.6",
                   background: "rgba(0, 0, 0, 0.5)",
                   textAlign: "justify",
+                  fontSize:"30px",
+                  fontWeight:"bold"
+             
                 }}
               >
-                Ikuti Captain Mobile di media sosial untuk promosi terkini, tips
-                penjagaan telefon, dan update servis terbaru! 🎉 Kami aktif di
-                TikTok, Instagram, dan Facebook — jangan lupa follow supaya anda
-                tidak terlepas sebarang info menarik.
+               Connect With Us on Social Media
               </a>
             </div>
-          </div>
         </div>
         <div className="card-container" style={{ marginBottom: "40px" }}>
           <div className="card">

@@ -85,21 +85,33 @@ const Home = () => {
                 marginTop: "-4px",
               }}
             >
-              Captain Mobile - Service
+              Captain Mobile 
             </h2>
+            <div style={{ paddingLeft: "20px" }}>
+              <a
+                style={{
+                  color: "white",
+                  lineHeight: "1.6",
+                  background: "rgba(0, 0, 0, 0.5)",
+                  textAlign: "justify",
+                  fontSize:"30px",
+                  fontWeight:"bold"
+             
+                }}
+              >
+               " TRADE IN LAMA TUKAR BARU "
+              </a>
+            </div>
             <div style={{padding:"20px"}}><a
               style={{
                 color: "white",
                 lineHeight: "1.6",
                 background: "rgba(0, 0, 0, 0.5)",
                 textAlign: "justify",
+                fontSize:"20px"
               }}
             >
-              Di Captain Mobile, kami menggabungkan kepakaran teknikal dengan
-              servis mesra pelanggan untuk memberikan penyelesaian telefon
-              pintar yang unggul. Sama ada anda perlukan servis pantas, aksesori
-              premium, atau nasihat pakar — kami ada untuk anda. Kualiti,
-              kepercayaan dan kepuasan anda adalah keutamaan kami.
+              Best way: swap your old phone, grab the latest.
             </a>
             </div>
           </div>

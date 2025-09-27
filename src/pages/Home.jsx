@@ -25,19 +25,19 @@ const Home = () => {
       id: 1,
       title: "SERVICE",
       text: "",
-      image: "/src/assets/repair2.jpeg",
+      image: "/src/assets/RepairAz.jpeg",
     },
     {
       id: 2,
       title: "SOCIAL MEDIA",
       text: "",
-      image: "/src/assets/kedai2.jpeg",
+      image: "/src/assets/MediaS.jpeg",
     },
     {
       id: 3,
       title: "CONTACT US",
       text: "",
-      image: "/src/assets/kedai3.jpeg",
+      image: "/src/assets/salam.jpeg",
     },
   ];
 
@@ -109,18 +109,22 @@ const Home = () => {
                 marginTop: "-4px",
               }}
             >
-             Welcome to Captain Mobile 2
+           Captain Mobile
             </h2>
-            <div style={{ padding: "20px" }}>
+            <div style={{ paddingLeft: "20px" }}>
               <a
                 style={{
                   color: "white",
                   lineHeight: "1.6",
                   background: "rgba(0, 0, 0, 0.5)",
                   textAlign: "justify",
+                  fontSize:"30px",
+                  fontWeight:"bold"
+             
                 }}
               >
-                – your trusted destination for smartphone repairs, premium accessories, and reliable mobile solutions. We combine technical expertise with friendly service to ensure your devices are always in top condition.
+               LUBUK IPHONE TERBESAR
+KUANTAN & KEMAMAN
               </a>
             </div>
           </div>

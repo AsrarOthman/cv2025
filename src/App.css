@@ -19,6 +19,11 @@
     text-align: center;
     -webkit-text-size-adjust: 100%;
     font-family: "proxima-regular", "PingFangSC", sans-serif;
-    font-weight: 400; */
-}
+    font-weight: 400;} */
 
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
