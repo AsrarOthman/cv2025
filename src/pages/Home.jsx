@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import "../components/Card.css";
 import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
+import fallbackImg from "../assets/logos.png";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -86,7 +87,6 @@ const Home = () => {
         {/* Hero Section */}
         <div
           style={{
-       
             minHeight: "300px",
             width: "100%",
             backgroundImage:
@@ -109,7 +109,7 @@ const Home = () => {
                 marginTop: "-4px",
               }}
             >
-           Captain Mobile
+              Captain Mobile
             </h2>
             <div style={{ paddingLeft: "20px" }}>
               <a
@@ -118,20 +118,17 @@ const Home = () => {
                   lineHeight: "1.6",
                   background: "rgba(0, 0, 0, 0.5)",
                   textAlign: "justify",
-                  fontSize:"30px",
-                  fontWeight:"bold"
-             
+                  fontSize: "30px",
+                  fontWeight: "bold",
                 }}
               >
-               LUBUK IPHONE TERBESAR
-KUANTAN & KEMAMAN
+                LUBUK IPHONE TERBESAR KUANTAN & KEMAMAN
               </a>
             </div>
           </div>
         </div>
         <div
           style={{
-           
             width: "100%",
             // backgroundImage:
             //   "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/src/assets/kedai2.jpeg')",
@@ -139,8 +136,7 @@ KUANTAN & KEMAMAN
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             minHeight: "300px",
-            height:"100%"
-       
+            height: "100%",
           }}
         >
           <div
@@ -197,8 +193,9 @@ KUANTAN & KEMAMAN
                     objectFit: "cover",
                     borderRadius: "8px 8px 0 0",
                     marginBottom: "12px",
-                    boder: "red solid 1px",
+                  
                   }}
+                  onError={(e) => (e.target.src = fallbackImg)}
                 />
 
                 <p style={{ color: "#ffffffff", fontSize: "14px" }}>
@@ -264,7 +261,7 @@ KUANTAN & KEMAMAN
                     objectFit: "cover",
                     borderRadius: "8px 8px 0 0",
                     marginBottom: "12px",
-                    boder: "red solid 1px",
+             
                   }}
                 />
 
@@ -331,7 +328,7 @@ KUANTAN & KEMAMAN
                     objectFit: "cover",
                     borderRadius: "8px 8px 0 0",
                     marginBottom: "12px",
-                    boder: "red solid 1px",
+
                   }}
                 />
 
@@ -368,7 +365,6 @@ KUANTAN & KEMAMAN
             if (card.id === 3) route = "/contactus";
 
             return (
-              
               <NavLink
                 key={card.id}
                 to={route}
