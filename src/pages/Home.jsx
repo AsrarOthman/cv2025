@@ -490,6 +490,7 @@ const Home = () => {
           </div>
         </div>
       )} */}
+      
       <Footer />
     </div>
   );

@@ -27,3 +27,14 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
+  .custom-link {
+    text-decoration: none;  /* buang underline */
+    color: inherit;         /* ikut warna asal text (tak jadi biru) */
+    cursor: pointer;        /* tukar cursor jadi tangan */
+  }
+
+  .custom-link:hover {
+    color: #007bff; /* optional: tukar warna bila hover */
+  }
