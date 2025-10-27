@@ -1,27 +1,40 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AuthProvider, AuthContext } from "./components/AuthProvider";
+
+// Import semua page AO
 import Login from "./pages/Login";
-import Home from "./pages/Home";
-import Service from "./pages/Service";
-import MediaSosial from "./pages/MediaSosial";
-import ContactUs from "./pages/ContactUs";
-import Graph from "./pages/Graph";
-import Pendaftaran from "./pages/Pendaftaran";
+import Dashboard from "./pages/Dashboard";
+import Privasinterma from "./pages/Privasi&terma";
+import TermsPrivacy from "./pages/TermsPrivacy";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/media" element={<MediaSosial />} />
-        <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/graph" element={<Graph />} />
-        <Route path="/pendaftaran" element={<Pendaftaran />} />
-        {/* Optional: Redirect root to /login */}
-        <Route path="*" element={<Home />} />
-      </Routes>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <div>
+          {/* Breadcrumb akan muncul di semua page kecuali login */}
+          <Routes>
+            {/* <Route path="/login" element={<Login />} /> */}
+            <Route
+              path="*"
+              element={
+                <>
+                  {/* <Breadcrumb /> */}
+                  <Routes>
+                    <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/privasi&terma" element={<Privasinterma />} />
+                    <Route path="/terms" element={<TermsPrivacy />} />
+                    {/* kalau path tak wujud, redirect ke home */}
+                    <Route path="*" element={<Dashboard />} />
+                  </Routes>
+                </>
+              }
+            />
+          </Routes>
+        </div>
+      </Router>
+    </AuthProvider>
   );
 }
 

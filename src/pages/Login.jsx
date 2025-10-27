@@ -1,116 +1,72 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../components/AuthProvider";
+import logo from "../assets/logos.png";
 
 const Login = () => {
+  const { setUser } = useContext(AuthContext);
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-
-    if (password === "adminict") {
-      localStorage.setItem("admin", "ICT");
-      navigate("/home");
-    } else {
-      setError("Password salah. Sila cuba lagi.");
+    try {
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/login`,
+        { username, password }
+      );
+      localStorage.setItem("token", response.data.token);
+      setUser(response.data.user);
+      navigate("/Home");
+    } catch (error) {
+      alert("Login gagal! Periksa username dan password.");
     }
-  };
-
-  const sharedInputStyle = {
-    width: "100%",
-    padding: "0.75rem 1rem", // <-- Konsisten kiri & kanan
-    borderRadius: "8px",
-    border: "1px solid #ccc",
-    fontSize: "1rem",
-    boxSizing: "border-box",
   };
 
   return (
     <div
+      className="login-page"
       style={{
+        // backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         minHeight: "100vh",
         display: "flex",
-        flexDirection:"column",
-        alignItems: "center",
         justifyContent: "center",
-        background: "#f3f4f6",
-        fontFamily: "sans-serif",
-        padding: "1rem",
-    
+        alignItems: "center",
+        position: "relative",
+        fontFamily: "Arial, sans-serif",
       }}
     >
-        <h2 style={{ textAlign: "center", marginBottom: "1.5rem",marginTop:"-100px" }}>
-          Sensori 2025 - Admin Page
-        </h2>
-      <form
-        onSubmit={handleLogin}
-        style={{
-          background: "white",
-          padding: "2rem",
-          borderRadius: "12px",
-          boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-          width: "100%",
-          maxWidth: "400px",
-        }}
-      >
-        <h2 style={{ marginBottom: "1.5rem", textAlign: "center" }}>
-          Log Masuk Admin
-        </h2>
+      {/* Empat gambar bergerak */}
+      {/* <img src={float1} alt="Floating1" className="floating-image floating1" />
+      <img src={float2} alt="Floating2" className="floating-image floating2" />
+      <img src={float3} alt="Floating3" className="floating-image floating3" />
+      <img src={float4} alt="Floating4" className="floating-image floating4" /> */}
 
-        <div style={{ marginBottom: "1rem" }}>
-          <label style={{ display: "block", marginBottom: ".5rem" }}>
-            Nama Pengguna
-          </label>
+      <div className="login-box">
+        <img src={logo} alt="Logo Pertanian" className="logo-login" />
+        <h2>Login</h2>
+        <form onSubmit={handleLogin}>
           <input
             type="text"
-            value="Admin"
-            disabled
-            style={{
-              ...sharedInputStyle,
-              backgroundColor: "#f0f0f0",
-              color: "#666",
-            }}
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
           />
-        </div>
-
-        <div style={{ marginBottom: "1rem" }}>
-          <label style={{ display: "block", marginBottom: ".5rem" }}>
-            Kata Laluan
-          </label>
           <input
             type="password"
+            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            placeholder="Masukkan password"
-            style={sharedInputStyle}
           />
-        </div>
-
-        {error && (
-          <p style={{ color: "red", fontSize: "0.9rem", marginBottom: "1rem" }}>
-            {error}
-          </p>
-        )}
-
-        <button
-          type="submit"
-          style={{
-            width: "100%",
-            padding: "0.75rem",
-            background: "#1d4ed8",
-            color: "white",
-            border: "none",
-            borderRadius: "8px",
-            fontWeight: "bold",
-            fontSize: "1rem",
-            cursor: "pointer",
-          }}
-        >
-          Log Masuk
-        </button>
-      </form>
+          <button type="submit">Login</button>
+        </form>
+      </div>
     </div>
   );
 };

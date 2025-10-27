@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "/src/assets/logo.png";
+import logo from "/src/assets/logo-ao.svg";
 import ScrollNavLink from "./ScrollNavLink";
+import "./Components.css";
+import DownloadCV from "./DownloadCV";
+
+
 
 const Header = ({ handleLogout }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,11 +18,12 @@ const Header = ({ handleLogout }) => {
         justifyContent: "space-between",
         alignItems: "center",
         padding: "1rem 2rem",
-        backgroundColor: "#c0bebeff",
-        borderBottom: "1px solid #e5e7eb",
+        backgroundColor: "#ffffffff",
+        borderBottom: "1px solid #cacacaff",
         position: "sticky",
         top: 0,
         zIndex: 1000,
+        height: "20px",
       }}
     >
       {/* Logo + Nav */}
@@ -33,10 +38,12 @@ const Header = ({ handleLogout }) => {
         {/* Logo */}
         <img
           src={logo}
-          alt="Captain Mobile Logo"
+          alt="JPNP Logo"
           style={{ height: "40px", cursor: "pointer" }}
           onClick={() => navigate("/home")} // klik gambar balik ke Home
         />
+        <div style={{}}> <h3>AO PORTFOLIO</h3></div>
+        
 
         {/* Hamburger menu (phone only) */}
         <div
@@ -64,10 +71,27 @@ const Header = ({ handleLogout }) => {
         {/* Menu links */}
         <nav className={`menu ${menuOpen ? "open" : ""}`}>
           <ScrollNavLink to="/home" label="Home" />
-          <ScrollNavLink to="/service" label="Service" />
-          <ScrollNavLink to="/media" label="SocialMedia" />
-          <ScrollNavLink to="/contactus" label="ContactUs" />
-        
+
+          {/* <div className="dropdown">
+            <ScrollNavLink to="/dashboard" label="Dashboard" />
+            <div className="dropdown-content">
+              <ScrollNavLink to="/dashboard/2025" label="Tahun 2025" />
+              <ScrollNavLink to="/dashboard/2026" label="Tahun 2026" />
+              <ScrollNavLink to="/dashboard/compare" label="Perbandingan" />
+            </div>
+          </div> */}
+
+          {/* <div className="dropdown">
+            <ScrollNavLink to="/kpidaerah" label="KPI Daerah" />
+            <div className="dropdown-contentA">
+              <ScrollNavLink to="/kpidaerah/2025" label="Tahun 2025" />
+              <ScrollNavLink to="/kpidaerah/2026" label="Tahun 2026" />
+              <ScrollNavLink to="/kpidaerah/compare" label="Perbandingan" />
+            </div>
+          </div> */}
+{/* 
+          <ScrollNavLink to="/media" label="KPI HQ" /> */}
+          <ScrollNavLink to="/privasi&terma" label="Download" />
         </nav>
       </div>
 
@@ -98,7 +122,7 @@ const Header = ({ handleLogout }) => {
               display: ${menuOpen ? "flex" : "none"};
               flex-direction: column;
               position: absolute;
-              top: 70px;
+              top: 50px;
               right: 0px;
               background: #dadadaff;
               padding: 10px 20px;
@@ -107,7 +131,7 @@ const Header = ({ handleLogout }) => {
               z-index: 999;
             }
             .menu a {
-              margin: 10px 0;
+              margin: 0px 0;
             }
           }
           @media (min-width: 769px) {
@@ -118,26 +142,11 @@ const Header = ({ handleLogout }) => {
           }
         `}
       </style>
+       {/* <DownloadCV/> */}
+
     </header>
+    
   );
 };
-
-// Komponen NavLink khas
-const NavLink = ({ to, label }) => (
-  <Link
-    to={to}
-    style={{
-      color: "#1f2937",
-      textDecoration: "none",
-      fontWeight: "700",
-      padding: "0.5rem 0.75rem",
-      borderRadius: "6px",
-    }}
-    onMouseEnter={(e) => (e.target.style.backgroundColor = "#e5e0e0")}
-    onMouseLeave={(e) => (e.target.style.backgroundColor = "transparent")}
-  >
-    {label}
-  </Link>
-);
 
 export default Header;

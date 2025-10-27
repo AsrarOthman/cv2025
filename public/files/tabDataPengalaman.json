@@ -1,0 +1,100 @@
+{
+  "experience": {
+    "Present": {
+      "text": "Software Developer (Freelance) — Developing systems such as the Tyre Monitoring System for SILS, designing UI using Figma, and creating an invoice generator using React.js. Also involved with JPN Pahang BKP-ICT (MyStep Programme) for computer and laptop troubleshooting, both onsite and remotely (AnyDesk), and serving as a facilitator for the 'Technology Update Programme'.",
+      "pic": [
+        "/src/assets/cm.png",
+        "/src/assets/kpi25.png",
+        "/src/assets/salinje.png",
+        "/src/assets/jpnp1.png",
+        "/src/assets/jpnp2.jpeg",
+        "/src/assets/jpnp3.jpeg",
+        "/src/assets/pc1.jpeg",
+        "/src/assets/pc2.png"
+      ]
+    },
+    "2017 - 2023": {
+      "text": "Pipeline Network Sdn Bhd — Served as Director of the Telematics Department. Managed telematics projects related to Petronas PCG and acted as a Hardware Engineer for IoT hardware projects for FGV, PGA Kuantan, and GPS-based systems. Designed 3D-printed IoT prototypes, including VTOL drone development with UMP.",
+      "pic": [
+        "/src/assets/as3.jpg",
+        "/src/assets/gps1.jpg",
+        "/src/assets/gps2.jpg",
+        "/src/assets/gps3.jpg",
+        "/src/assets/gps4.jpg",
+        "/src/assets/gps5.jpeg",
+        "/src/assets/drone1.jpg",
+        "/src/assets/drone2.jpg",
+        "/src/assets/drone3.jpg",
+        "/src/assets/tnb1.jpg",
+        "/src/assets/tnb2.jpg"
+      ]
+    },
+    "2016": {
+      "text": "Khazanah Nasional SL1M — Participated in a soft-skill development programme organized by Khazanah Nasional to enhance professional and personal growth.",
+      "pic": ["/src/assets/mmu.png"]
+    },
+    "2015": {
+      "text": "Syarikat Elektrik Gemini, Pahang — Worked as a Wireman, responsible for troubleshooting electrical wiring and designing wiring systems.",
+      "pic": [
+        "/src/assets/wire.png",
+        "/src/assets/wire1.png",
+        "/src/assets/wire2.png",
+        "/src/assets/wire3.png"
+      ]
+    },
+    "2013": {
+      "text": "Vast IT Sdn Bhd, Pahang — Work as a Technician. Gained hands-on experience in troubleshooting computer hardware and software, as well as repairing laptops and PCs.",
+      "pic": ["/src/assets/vit.jpg","/src/assets/vit1.png","/src/assets/vit2.jpg"]
+    }
+  },
+
+  "education": {
+    "Present": {
+      "text": "Full Stack Developer Bootcamp (Adnexio.Edu, 2023) — Learned and developed applications using the PERN Stack (PostgreSQL, Express.js, React.js, Node.js) for both web and mobile platforms.",
+      "pic": ["/src/assets/sec.png"]
+    },
+    "2017 - 2023": {
+      "text": "Bachelor’s Degree in Microelectronic Engineering (Universiti Malaysia Perlis, 2013–2016) — Focused on microelectronics and embedded systems.",
+      "pic": [
+        "/src/assets/dgree.png",
+        "/src/assets/uni1.png",
+        "/src/assets/book.jpg"
+      ]
+    },
+    "2016": {
+      "text": "Diploma in Microelectronic Engineering (Universiti Malaysia Perlis, 2010–2013) — Core studies in electronic circuits and microprocessors.",
+      "pic": ["/src/assets/dip.png", "/src/assets/gdip.jpg"]
+    },
+    "2015": {
+      "text": "Malaysian Certificate of Education (SPM, Sekolah Menengah Teknik Dungun, 2007–2009) — Technical stream focusing on electrical and electronic fundamentals.",
+      "pic": ["/src/assets/spm.png"]
+    }
+  },
+
+  "skills": {
+    "Present": {
+      "text": "Full Stack Development — React.js, Express.js, PostgreSQL, Node.js, and NGINX for web application deployment.",
+      "pic": [
+        "/src/assets/logo-react.svg",
+        "/src/assets/logo-node.svg",
+        "/src/assets/logo-nginx.svg"
+      ]
+    },
+    "Software": {
+      "text": "IoT & Embedded Systems — Experienced with Arduino, ESP32, Raspberry Pi, and  C++ Language & Python Language for IoT device integration and automation systems.",
+      "pic": ["/src/assets/logo-esp32.png", "/src/assets/logo-raspi.png"]
+    },
+    "Hardware": {
+      "text": "Drone & Telematics Hardware — Designed and developed telematics systems and VTOL drone prototypes using 3D printing and IoT integration.",
+      "pic": ["/src/assets/logo-drone.png", "/src/assets/logo-iot.png"]
+    },
+    "Design": {
+      "text": "Design Software — Proficient in various design tools including Adobe Illustrator, Photoshop, SolidWorks, AutoCAD, Canva, Figma, and Proteus (for PCB design and circuit simulation). Experienced in utilizing 3D printing and CAD software for product design and prototyping.",
+      "pic": ["/src/assets/logo-electric.png"]
+    },
+    "Basic Skill": {
+      "text": "Basic Computer Literacy — Proficient in Microsoft Excel, Word, PowerPoint, Canva, and Movie Maker for documentation and presentations.",
+      "pic": ["/src/assets/logo-ms.png"]
+    }
+  }
+}

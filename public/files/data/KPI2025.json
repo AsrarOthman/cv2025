@@ -1,0 +1,44 @@
+{
+  "Demo Live Link": "https://kpi.agrisphg.my/",
+  "Tajuk Projek": "KPI Dashboard",
+  "Tujuan": "Sistem untuk merekod, menganalisis dan memaparkan data prestasi (KPI) dalam bentuk carta dan laporan interaktif.",
+  "Objektif Utama": [
+    "Memudahkan pemantauan prestasi jabatan atau projek secara masa nyata.",
+    "Menggantikan laporan manual dengan sistem automatik.",
+    "Menyediakan paparan visual (dashboard) untuk membuat keputusan dengan lebih cepat."
+  ],
+  "Jenis Sistem": "Aplikasi Web (Responsive Web App)",
+  "Bahasa & Teknologi Digunakan": {
+    "Frontend": "React.js (Chart.js / Recharts untuk carta)",
+    "Backend": "Node.js (Express.js)",
+    "Database": "PostgreSQL",
+    "API": "RESTful JSON API",
+    "Hosting": "Render / Vercel / Railway",
+    "Version Control": "GitHub"
+  },
+  "Lokasi Server / Hosting": "🇸🇬 Singapore Region (Render.com Cloud Server)",
+  "Fungsi Utama": [
+    "Rekod & kemas kini data KPI",
+    "Paparan carta bar dan carta donut",
+    "Carian & penapisan data KPI",
+    "Login dan kawalan akses (Admin & User)",
+    "Export laporan (PDF / Excel)"
+  ],
+  "Peranan AO": [
+    "Reka bentuk dan bina frontend React (Dashboard UI & carta)",
+    "Bina API backend Express untuk CRUD data KPI",
+    "Reka bentuk struktur jadual PostgreSQL",
+    "Integrasi data antara frontend dan backend"
+  ],
+  "Keunikan Projek": [
+    "UI ringkas dan mesra pengguna",
+    "Data masa nyata dengan API langsung",
+    "Boleh dikembangkan untuk pelbagai jabatan / KPI lain"
+  ],
+  "Cabaran & Penyelesaian": {
+    "Cabaran": "Pengurusan state React & sambungan API.",
+    "Penyelesaian": "Gunakan useEffect + axios dengan error handling dan caching tempatan."
+  },
+  "Status Projek": "Sedang dibangunkan / Versi prototaip siap.",
+  "Tangkapan Skrin / Demo": "(Letak gambar carta bar + screenshot halaman utama Dashboard)"
+}

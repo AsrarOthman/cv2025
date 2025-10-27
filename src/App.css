@@ -1,25 +1,77 @@
-* {
-  /* color: #3f3f3f;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  /* background-color: #8f8f8f; */
-  /* background-color: #ffffff;  */
+/* === Layout utama === */
+.home-container {
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+
 }
-/* .tiktok-embed {
-    position: relative;
-    display: block;
-    width: 100%;
-    margin: 18px auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    line-height: 1.15;
-    overflow: hidden;
-    text-align: center;
-    -webkit-text-size-adjust: 100%;
-    font-family: "proxima-regular", "PingFangSC", sans-serif;
-    font-weight: 400;} */
+
+/* === Card umum === */
+.card {
+  flex: 1 1 100px;
+  min-width: 100px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* === Card dalaman === */
+.card-inner {
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  margin: 30px auto;
+  padding: 20px;
+
+
+
+
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+}
+
+
+/* === Tajuk & teks === */
+.card-inner h3 {
+  margin: 10px 0;
+  color: #000;
+  font-size: 20px;
+}
+
+.card-inner p {
+  color: #333;
+  font-size: 14px;
+}
+
+/* === Bezakan card kedua === */
+.card-2 {
+  flex: 3 1 600px; /* dua kali ganda besar dari card pertama */
+}
+
+.card-2 .card-inner {
+  background-color: #ffffff;
+  border-color: #cce5ff;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card,
+  .card-2 {
+    flex: 1 1 100%;
+    height: auto;
+  }
+}
 
 
 .kalam-bold {
@@ -38,3 +90,89 @@
   .custom-link:hover {
     color: #007bff; /* optional: tukar warna bila hover */
   }
+
+  /* Kotak login..... */
+.login-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+/* Logo */
+
+.login-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.logo-login {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-box button:hover {
+  background-color: #45a049;
+}
+
+/* Gambar bergerak */
+.floating-image {
+  position: absolute;
+  width: 80px;
+  z-index: 1;
+  top: 20%;
+  animation: floatRightToLeft 10s linear infinite;
+}
+
+/* Set posisi top berlainan untuk setiap gambar supaya nampak natural */
+.floating1 { top: 20%; animation-delay: 0s; }
+.floating2 { top: 35%; animation-delay: 2s; }
+.floating3 { top: 50%; animation-delay: 4s; }
+.floating4 { top: 65%; animation-delay: 6s; }
+
+/* Animasi float dari kanan ke kiri */
+@keyframes floatRightToLeft {
+  0% {
+    right: -100px;
+  }
+  50% {
+    right: 50%;
+  }
+  100% {
+    right: -100px;
+  }
+}
+
+  /* .....Kotak login */

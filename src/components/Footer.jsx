@@ -1,4 +1,5 @@
 // src/components/Footer.jsx
+import "./Components.css";
 const Footer = () => {
   return (
     <>
@@ -11,45 +12,91 @@ const Footer = () => {
           paddingBottom: "40px",
         }}
       >
-        <h2 style={{ padding: "40px", marginTop: "-40px" }}><a href="https://captainmobile.my/" class="custom-link">CAPTAIN MOBILE</a></h2>
-        <div style={{ paddingLeft: "40px", color: "#333232ff" }}>
+        <h2 style={{ padding: "40px", marginTop: "-40px", display:"flex", flexDirection:"column" }}>
+
+          <a href="/*" class="custom-link">
+            SALINje.COM
+          </a>
+          <br/>
+          <a href="/home" class="custom-link" style={{fontSize:"15px"}}>
+            Home
+          </a>
+           <a href="/privasi&terma" class="custom-link" style={{fontSize:"15px"}}>
+            Dasar Privasi & Terma Perkhidmatan
+          </a>
+        </h2>
+        {/* <div style={{ paddingLeft: "40px", color: "#333232ff" }}>
           <h3>
-            <a href="https://captainmobile.my/service" class="custom-link">Service</a>
+            <a href="https://captainmobile.my/service" class="custom-link">
+              Dashboard
+            </a>
           </h3>
-     
-          <a href="https://captainmobile.my/contactus" class="custom-link">Trade In</a>
+
+          <a href="https://captainmobile.my/contactus" class="custom-link">
+            Dashboard KPI 2025
+          </a>
           <br />
-        
-          <a href="https://captainmobile.my/contactus" class="custom-link">Beli Gadget</a>
+
+          <a href="https://captainmobile.my/contactus" class="custom-link">
+            Dashboard KPI 2026
+          </a>
           <br />
-          <a></a>
-          <a href="https://captainmobile.my/contactus" class="custom-link">Jualan Urgent</a>
+
+          <a href="https://captainmobile.my/contactus" class="custom-link">
+            Dashboard KPI 2025 vs 2026
+          </a>
           <br />
-          <a></a>
-          <a href="https://captainmobile.my/contactus" class="custom-link">Tanya Repair</a>
 
           <h3>
-            <a href="https://captainmobile.my/media" class="custom-link">Media Social</a>
+            <a href="https://captainmobile.my/media" class="custom-link">
+              KPI Daerah
+            </a>
           </h3>
-     
-          <a href="https://www.tiktok.com/@captainmobilekuantan" class="custom-link">TikTok Kuantan</a> <a href="https://www.tiktok.com/@captainmobilekemaman___" class="custom-link">| TikTok Kemaman</a>
+
+          <a
+            href="https://www.tiktok.com/@captainmobilekuantan"
+            class="custom-link"
+          >
+            KPI Daerah 2025
+          </a>
           <br />
-        
-          <a href="https://www.instagram.com/captainmobilekuantan" class="custom-link">Instagram Kuantan</a> <a href="https://www.instagram.com/captainmobilekemaman" class="custom-link">| Instagram Kemaman</a>
+          <a
+            href="https://www.instagram.com/captainmobilekuantan"
+            class="custom-link"
+          >
+            KPI Daerah 2026
+          </a>
           <br />
-        
-          <a href="https://www.facebook.com/captainmobile.kuantan" class="custom-link">Facebook Kuantan</a> <a href="https://www.facebook.com/captainmobile.my" class="custom-link">| Facebook Kemaman</a>
+          <a
+            href="https://www.facebook.com/captainmobile.kuantan"
+            class="custom-link"
+          >
+            KPI Daerah 2025 vs 2026
+          </a>
+          <br />
 
           <h3>
-            <a href="https://captainmobile.my/contactus" class="custom-link">Contact Us</a>
+            <a href="https://captainmobile.my/media" class="custom-link">
+              KPI HQ
+            </a>
           </h3>
-        
-          <a href="https://kuantan.captainmobile.my/" class="custom-link">Cawangan Kuantan</a>
+
+          <h3>
+            <a href="https://captainmobile.my/contactus" class="custom-link">
+              Tetapan
+            </a>
+          </h3>
+
+          <a href="https://kuantan.captainmobile.my/" class="custom-link">
+            Cawangan Kuantan
+          </a>
           <br />
-          
-          <a href="https://kemaman.captainmobile.my/" class="custom-link">Cawangan Kemaman</a>
+
+          <a href="https://kemaman.captainmobile.my/" class="custom-link">
+            Cawangan Kemaman
+          </a>
           <br />
-        </div>
+        </div> */}
       </div>
 
       {/* Bottom Bar */}
@@ -61,7 +108,8 @@ const Footer = () => {
           paddingBottom: "10px",
         }}
       >
-        Copyright © 2025 - Captain Mobile. Semua hak cipta dilindungi.
+        Copyright © 2025 - AsrarOthman. Semua hak cipta
+        dilindungi.
       </div>
     </>
   );
