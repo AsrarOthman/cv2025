@@ -171,7 +171,7 @@ const gambarList = [
                 <LogoWithPopup
                   logo={logo2}
                   title={"Captain Mobile"}
-                  dataInfo={"/files/data/Salinje.json"}
+                  dataInfo={"/files/data/cmweb.json"}
                 />
               }
               height="auto"

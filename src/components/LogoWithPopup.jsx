@@ -14,7 +14,7 @@ export default function LogoWithPopupCentered({ logo, title, dataInfo }) {
       .catch((err) => console.error("Gagal fetch JSON:", err));
   }, []);
 
-  if (!data) return <p>Loading data projek...</p>;
+  if (!data) return <p>Loading data ...</p>;
 
   return (
     <>
@@ -95,7 +95,7 @@ export default function LogoWithPopupCentered({ logo, title, dataInfo }) {
                     marginBottom: "15px",
                   }}
                 >
-                  📊 Maklumat Projek: {title}
+                  📊 Project Information: {title}
                 </h2>
                   <img
                     src={logo}
@@ -136,7 +136,7 @@ export default function LogoWithPopupCentered({ logo, title, dataInfo }) {
                         
                         }}
                       >
-                        Perkara
+                        Subject
                       </th>
                       <th
                         style={{
@@ -147,7 +147,7 @@ export default function LogoWithPopupCentered({ logo, title, dataInfo }) {
                    
                         }}
                       >
-                        Maklumat
+                        Details
                       </th>
                     </tr>
                   </thead>
@@ -187,7 +187,7 @@ export default function LogoWithPopupCentered({ logo, title, dataInfo }) {
                                 )
                               )}
                             </ul>
-                          ) : key === "Demo Live Link" ? (
+                          ) : key === "Live Link" ? (
                             <a
                               href={value}
                               target="_blank"

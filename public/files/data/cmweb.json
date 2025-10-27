@@ -1,0 +1,17 @@
+{
+  "Live Link": "https://captainmobile.my/",
+  "Project Title": "Captain Mobile",
+  "Purpose": "A platform specialising in mobile devices, accessories, and repair services.",
+  "Main Objectives": [
+    "To provide a user-friendly and effective online promotion platform for mobile phones and accessories.",
+    "To integrate device repair service bookings with product sales within a unified system.",
+    "To enable customers to make selections and inquiries based on their location and specific issues."
+  ],
+  "System Type": "Web Application (Responsive Web App)",
+  "Languages & Technologies Used": {
+    "Frontend": "React.js",
+    "Backend": "-",
+    "Database": "Google Sheet"
+  },
+  "Server / Hosting Location": "Render + Domain + Google Sheet"
+}
