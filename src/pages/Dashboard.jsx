@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import InfoBox from "../components/InfoBox";
 import Hero from "../components/Hero";
 import axios from "axios";
-import Hantar from "../components/hantar";
 import Terima from "../components/Terima";
 import DownloadCV from "../components/DownloadCV";
 import logo from "/src/assets/kpi25.png";
