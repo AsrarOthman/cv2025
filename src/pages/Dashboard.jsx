@@ -143,7 +143,7 @@ const gambarList = [
                 <LogoWithPopup
                   logo={logo}
                   title={"KPI2025"}
-                  dataInfo={"public/files/data/KPI2025.json"}
+                  dataInfo={"/files/data/KPI2025.json"}
                 />
               }
               height="auto"
@@ -157,7 +157,7 @@ const gambarList = [
                 <LogoWithPopup
                   logo={logo1}
                   title={"SalinJe.com"}
-                  dataInfo={"public/files/data/Salinje.json"}
+                  dataInfo={"/files/data/Salinje.json"}
                 />
               }
               height="auto"
@@ -171,7 +171,7 @@ const gambarList = [
                 <LogoWithPopup
                   logo={logo2}
                   title={"Captain Mobile"}
-                  dataInfo={"public/files/data/Salinje.json"}
+                  dataInfo={"/files/data/Salinje.json"}
                 />
               }
               height="auto"
@@ -180,7 +180,11 @@ const gambarList = [
           <div className="">
             <InfoBox
               title="Sensori Web App"
-              boxContent={"data2"}
+              boxContent={<LogoWithPopup
+                  logo={logo2}
+                  title={"Captain Mobile"}
+                  dataInfo={"/files/data/Salinje.json"}
+                />}
               height="auto"
             />
           </div>
