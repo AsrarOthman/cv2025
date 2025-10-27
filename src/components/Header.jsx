@@ -91,7 +91,7 @@ const Header = ({ handleLogout }) => {
           </div> */}
 {/* 
           <ScrollNavLink to="/media" label="KPI HQ" /> */}
-          <ScrollNavLink to="/privasi&terma" label="Download" />
+          <ScrollNavLink to="/download" label="Download" />
         </nav>
       </div>
 

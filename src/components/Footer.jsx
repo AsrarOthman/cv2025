@@ -15,14 +15,14 @@ const Footer = () => {
         <h2 style={{ padding: "40px", marginTop: "-40px", display:"flex", flexDirection:"column" }}>
 
           <a href="/*" class="custom-link">
-            SALINje.COM
+            AO PORTFOLIO
           </a>
           <br/>
           <a href="/home" class="custom-link" style={{fontSize:"15px"}}>
             Home
           </a>
-           <a href="/privasi&terma" class="custom-link" style={{fontSize:"15px"}}>
-            Dasar Privasi & Terma Perkhidmatan
+           <a href="/download" class="custom-link" style={{fontSize:"15px"}}>
+            Download
           </a>
         </h2>
         {/* <div style={{ paddingLeft: "40px", color: "#333232ff" }}>

@@ -3,10 +3,10 @@ import React from "react";
 const DownloadCV = () => {
   const handleDownload = () => {
     // Letakkan URL fail (boleh juga relative path dari public folder)
-    const fileUrl = "/files/CV-AsrarOthman.pdf"; // contoh: fail disimpan dalam folder public/files/
+    const fileUrl = "/files/CV- AsrarOthman (2025).pdf"; // contoh: fail disimpan dalam folder public/files/
     const link = document.createElement("a");
     link.href = fileUrl;
-    link.download = "CV-AsrarOthman.pdf"; // nama fail semasa dimuat turun
+    link.download = "AsrarOthman (2025).pdf"; // nama fail semasa dimuat turun
     link.click();
   };
 

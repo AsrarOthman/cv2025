@@ -72,9 +72,9 @@ const ContactUs = () => {
                   flexDirection: "row",
                 }}
               >
-                <h2 style={{ color: "black" }}>SALIN</h2>
-                <h2 style={{ color: "red" }}>JE</h2>
-                <h2>.COM</h2>
+                <h2 style={{ color: "black" }}>AO</h2>
+                <h2 style={{ color: "red" }}>Port</h2>
+                <h2>FOLIO</h2>
               </div>
             </h2>
             <div style={{ paddingLeft: "20px" }}>
@@ -88,7 +88,7 @@ const ContactUs = () => {
                   fontWeight: "bold",
                 }}
               >
-                “Dasar Privasi & Terma Perkhidmatan"
+                “Download my resume below 👇” 
               </a>
             </div>
           </div>

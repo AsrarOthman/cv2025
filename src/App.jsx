@@ -5,7 +5,7 @@ import { AuthProvider, AuthContext } from "./components/AuthProvider";
 // Import semua page AO
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-import Privasinterma from "./pages/Privasi&terma";
+import Download from "./pages/Download";
 import TermsPrivacy from "./pages/TermsPrivacy";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
                   {/* <Breadcrumb /> */}
                   <Routes>
                     <Route path="/dashboard" element={<Dashboard />} />
-                    <Route path="/privasi&terma" element={<Privasinterma />} />
+                    <Route path="/download" element={<Download />} />
                     <Route path="/terms" element={<TermsPrivacy />} />
                     {/* kalau path tak wujud, redirect ke home */}
                     <Route path="*" element={<Dashboard />} />

@@ -11,6 +11,7 @@ import DownloadCV from "../components/DownloadCV";
 import logo from "/src/assets/kpi25.png";
 import logo1 from "/src/assets/salinje.png";
 import logo2 from "/src/assets/cm.png";
+import logo3 from "/src/assets/dev.png";
 import LogoWithPopup from "../components/LogoWithPopup";
 import VerticalTabs from "../components/VerticalTabs";
 import HorizontalImageScroll from "../components/HorizontalImageScroll";
@@ -179,11 +180,11 @@ const gambarList = [
           </div>
           <div className="">
             <InfoBox
-              title="Sensori Web App"
+              title="Dashboard Info -Under Dev"
               boxContent={<LogoWithPopup
-                  logo={logo2}
-                  title={"Captain Mobile"}
-                  dataInfo={"/files/data/Salinje.json"}
+                  logo={logo3}
+                  title={"Dashboard Info -Under Dev"}
+                  dataInfo={"/files/data/demo.json"}
                 />}
               height="auto"
             />
@@ -201,7 +202,8 @@ const gambarList = [
         >
 
         </div>
-        <h3 style={{ marginLeft: "20px" }}>⚙️ 2. Hardware Prototype</h3>
+        <br/> <br/>
+        {/* <h3 style={{ marginLeft: "20px" }}>⚙️ 2. Hardware Prototype</h3> */}
 
         
 

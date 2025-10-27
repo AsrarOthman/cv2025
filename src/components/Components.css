@@ -340,13 +340,27 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 
 }
-
+.imgcv{
+  height: 900px;
+}
+.imgcv2{
+  height: 500px;
+}
 /* Responsif */
 @media (max-width: 768px) {
   .project-table-container {
     padding: 16px;
   }
-
+.imgcv{
+  height: 400px;
+  margin-left: -30px;
+  
+}
+.imgcv2{
+  height: 200px;
+  margin-left: -30px;
+  
+}
   .tablepopup {
     width: 300px;
     margin-left: -25px;

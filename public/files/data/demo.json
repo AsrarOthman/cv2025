@@ -1,0 +1,18 @@
+{
+  "Live Link": "https://demo-xj6u.onrender.com/",
+  "Project Title": "Dashboard Info -Under development",
+  "Purpose": "A centralized dashboard system designed to display, and manage  information .",
+  "Main Objectives": [
+    "To provide a single platform for visualizing and managing key information.",
+    "To simplify data access and improve collaboration across users or teams.",
+    "To enhance productivity by replacing manual reporting with an interactive web interface."
+  ],
+  "System Type": "Web-Based Dashboard (Responsive Web App)",
+  "Languages & Technologies Used": {
+    "Frontend": "React.js",
+    "Backend": "Node.js (Express.js)",
+    "Database": "PostgreSQL",
+    "API": "RESTful JSON API"
+  },
+  "Server / Hosting Location": "Local Server + Cloudflare Tunnel"
+}
