@@ -99,7 +99,7 @@ const gambarList = [
           }}
         >
           <a style={{ fontSize: "18px", fontWeight: "600" }}>
-            Experience & Education :
+            Experience & Education:
           </a>
         </div>
 
