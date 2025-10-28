@@ -1,0 +1,23 @@
+.image-scroll-container {
+  height: 400px;              /* tinggi container */
+  width: 320px;               /* lebar container */
+  overflow-y: auto;           /* enable scroll menegak */
+  overflow-x: hidden;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fafafa;
+  scroll-behavior: smooth;    /* scrolling lembut */
+}
+
+.scroll-image {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.scroll-image:hover {
+  transform: scale(1.03);
+}

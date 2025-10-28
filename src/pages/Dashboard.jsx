@@ -14,7 +14,8 @@ import logo2 from "/src/assets/cm.png";
 import logo3 from "/src/assets/dev.png";
 import LogoWithPopup from "../components/LogoWithPopup";
 import VerticalTabs from "../components/VerticalTabs";
-import HorizontalImageScroll from "../components/HorizontalImageScroll";
+import HorizontalImageScroll2 from "../components/HorizontalImageScroll2";
+import VerticalImageScroll from "../components/VerticalImageScroll";
 
 const Dashboard = () => {
   // ------------------ TOKEN SETIAP PAGE ------------------
@@ -57,13 +58,7 @@ const Dashboard = () => {
     fetchProfile();
   }, [navigate]);
   // ------------------ END TOKEN ------------------
-const gambarList = [
-  "/src/assets/gps1.jpg",
-  "/src/assets/gps2.jpg",
- "/src/assets/gps3.jpg",
- "/src/assets/gps4.jpg",
- "/src/assets/gps5.jpeg",
-];
+
   return (
     <div
       style={{
@@ -191,6 +186,9 @@ const gambarList = [
           </div>
         </div>
 
+        
+            
+
         <div
           className=""
           style={{
@@ -203,9 +201,14 @@ const gambarList = [
 
         </div>
         <br/> <br/>
-        {/* <h3 style={{ marginLeft: "20px" }}>⚙️ 2. Hardware Prototype</h3> */}
-
-        
+        <h3 style={{ marginLeft: "20px" }}>⚙️ 2. Hardware Prototype</h3>
+        <div style={{margin:"20px"}}>  <a>Developed an underground pipeline inspection robot system capable of operating over a 100-meter range using two Raspberry Pi 4 units connected via LAN cable for communication between Pi A (Robot Controller) and Pi B (Gateway).
+Additionally, a custom control application was developed to remotely operate the robot and monitor inspection data in real-time.</a></div>
+       
+<div style={{ display: "flex", justifyContent: "center", padding: "2rem" }}>
+      <HorizontalImageScroll2/>
+    </div>
+        <br/>
 
       </main>
 
